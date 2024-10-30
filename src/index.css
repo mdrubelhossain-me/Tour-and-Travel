@@ -18,3 +18,21 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+.myBtn {
+    border: none;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    color: white;
+    padding: 8px 16px;
+    margin-left: 10px;
+    border-radius: 24px;
+    background: rgb(57, 219, 212);
+    background: linear-gradient(90deg, rgba(57, 219, 212, 1) 0%, rgba(26, 26, 144, 1) 91%);
+}
+
+.myBtn:hover {
+    background: rgb(57, 219, 212);
+    background: linear-gradient(90deg, rgba(26, 26, 144, 1) 0%, rgba(57, 219, 212, 1) 91%);
+    transition: .6s;
+}

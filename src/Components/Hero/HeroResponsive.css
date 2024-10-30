@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .hero-section {
+        height: 100vh;
+    }
+    .hero-section .content {
+        margin-top: 100px;
+    }
+    .search-area {
+        margin-top: 20px;
+    }
+}
