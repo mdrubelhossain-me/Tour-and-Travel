@@ -1,0 +1,19 @@
+@media (max-width: 991px) {
+    .footer-section {
+        height: 750px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        height: 900px;
+    }
+
+    .footer-section .content .logo {
+        margin-right: -14px;
+    }
+
+    .footer-section .content .f-widget p {
+        width: 100%;
+    }
+}

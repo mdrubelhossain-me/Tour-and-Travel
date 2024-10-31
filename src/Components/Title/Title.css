@@ -1,0 +1,13 @@
+.title-section{
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+    padding: 80px 0px 15px 0px;
+}
+.title-section h2{
+    margin: 0;
+    -webkit-text-stroke: 1px;
+}
+.title-section p{
+    margin: 0;
+    font-size: 16px;
+}

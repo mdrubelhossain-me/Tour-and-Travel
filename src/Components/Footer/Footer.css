@@ -1,0 +1,144 @@
+.footer-section {
+    width: 100%;
+    height: 455px;
+    position: relative;
+}
+
+.footer-section video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-section .over-lay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0b2d9c;
+    opacity: .8;
+    z-index: 1;
+}
+
+.footer-section .content {
+    position: absolute;
+    padding: 80px 0px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    z-index: 2;
+}
+
+.footer-section .content .logo {
+    display: block;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 14px;
+}
+
+.footer-section .content .logo .bi-airplane {
+    display: block;
+    margin: auto;
+    transform: rotate(60deg);
+    font-size: 14px;
+    color: white;
+    margin-top: -52px;
+}
+
+.footer-section .content .f-widget p {
+    margin-top: 42px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    width: 90%;
+}
+
+.footer-section .content .f-widget h4 {
+    font-size: 22px;
+    padding-bottom: 5px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.social a {
+    display: inline-block;
+    font-size: 14px;
+    color: white;
+    padding-right: 12px;
+}
+
+.footer-section .content .f-widget ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer-section .content .f-widget ul li {
+    line-height: 28px;
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-section .content .f-widget ul li i {
+    padding-right: 8px;
+    font-size: 13px;
+}
+
+.footer-section .content .f-widget ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.footer-section .content .f-widget ul li:hover a {
+    padding-left: 8px;
+    transition: .6s;
+}
+
+.s-form {
+    padding: 8px 8px;
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.s-form input {
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+}
+
+.s-form input:focus {
+    outline: none !important;
+    outline-width: none !important;
+    box-shadow: none !important;
+}
+
+.s-form .myBtn {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding-left: 8px;
+}
+
+.ex-footer {
+    border-top: 1px solid rgb(72, 85, 207);
+    margin-top: 32px;
+    padding-top: 15px;
+}
+
+.ex-footer p {
+    font-size: 14px;
+    color: white;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.ex-footer p a {
+    color: white;
+}

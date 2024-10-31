@@ -28,7 +28,7 @@ const Hero = () => {
             <video src={video} autoPlay loop muted type="video/mp4"></video>
             <div className="content">
                 <div className="container">
-                    <h5>Our Packages</h5>
+                    <h5>Our Packages - We Offer</h5>
                     <h1>Search Your Holiday <i className="bi bi-search"></i></h1>
                     <div className="search-area overflow-hidden">
                         <form action="">

@@ -7,7 +7,6 @@ const Main = () => {
   return (
     <div className="container">
       <div className="popular-destination">
-        <h2>Popular Destiantion</h2>
         <div className="row g-4 mt-3">
           {destinations.map((destination) => (
             <div
@@ -35,6 +34,9 @@ const Main = () => {
               </div>
             </div>
           ))}
+          <div className="col-lg-12 d-flex justify-content-center pt-4 pb-5">
+            <a href="#" className="myBtn d-block text-center">Show More <i class="bi bi-arrow-right"></i></a>
+          </div>
         </div>
       </div>
     </div>

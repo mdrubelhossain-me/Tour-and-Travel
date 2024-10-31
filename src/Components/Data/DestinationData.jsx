@@ -70,7 +70,7 @@ const destinations = [
         imgSrc: d7,
         d_title: "Dubai Beach Resorts",
         icon: "bi-geo-alt",
-        location: "Dubai",
+        location: "United Arab Emirates",
         Fees: 2200,
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
     },
