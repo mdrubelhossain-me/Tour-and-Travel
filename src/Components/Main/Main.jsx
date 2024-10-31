@@ -8,7 +8,7 @@ const Main = () => {
     <div className="container">
       <div className="popular-destination">
         <h2>Popular Destiantion</h2>
-        <div className="row g-3 mt-3">
+        <div className="row g-4 mt-3">
           {destinations.map((destination) => (
             <div
               className="col-lg-3 col-md-4 col-sm-6 col-6"

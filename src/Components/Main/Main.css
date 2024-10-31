@@ -44,6 +44,7 @@
 
 .popular-destination .card .card-body h6 {
     font-size: 15px;
+    opacity: .8;
 }
 
 .popular-destination .card .card-body h6 i {
