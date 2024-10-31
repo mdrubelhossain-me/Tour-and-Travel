@@ -8,6 +8,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 import 'jquery/dist/jquery.min.js'
 
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />

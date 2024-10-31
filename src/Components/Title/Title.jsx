@@ -5,8 +5,8 @@ import './TitleResponsive.css'
 const Title = ({Title, subTitle}) => {
     return (
         <div className='container title-section'>
-            <h2>{Title}</h2>
-            <p>{subTitle}</p>
+            <h2 data-aos="fade-left">{Title}</h2>
+            <p data-aos="fade-right">{subTitle}</p>
         </div>
     );
 };
