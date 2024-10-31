@@ -1,0 +1,67 @@
+.popular-destination .card {
+    font-family: "Josefin Sans", sans-serif;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    overflow: hidden;
+}
+
+.popular-destination .card:hover img {
+    transform: scale(1.2) rotate(5deg);
+    transition: .6s;
+}
+
+.popular-destination .card .destination-photo {
+    width: 100%;
+    height: 180px;
+    border: none;
+    overflow: hidden;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.popular-destination .card .destination-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.popular-destination .card .card-body {
+    padding-bottom: 28px;
+}
+
+.popular-destination .card .card-body .destination-title {
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+
+.popular-destination .card .card-body .destination-title:hover {
+    text-decoration: underline;
+    transition: .6s;
+}
+
+.popular-destination .card .card-body h6 {
+    font-size: 15px;
+}
+
+.popular-destination .card .card-body h6 i {
+    padding-right: 6px;
+    color: blue;
+}
+
+.popular-destination .card .card-body .fee {
+    font-size: 16px;
+}
+
+.popular-destination .card .card-body .description {
+    font-size: 14px;
+    text-align: justify;
+    padding: 14px 0px;
+}
+
+.popular-destination .card .card-body .myBtn {
+    margin: 0 !important;
+    text-decoration: none;
+}

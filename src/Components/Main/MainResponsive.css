@@ -1,0 +1,43 @@
+@media (max-width: 991px){
+    .popular-destination .card .destination-photo {
+        height: 160px;
+    }
+    .popular-destination .card .card-body {
+        padding-bottom: 22px;
+    }
+    .popular-destination .card .card-body .destination-title {
+        font-size: 16px;
+    }
+    .popular-destination .card .card-body h6 {
+        font-size: 13px;
+    }
+    .popular-destination .card .card-body .fee {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .popular-destination .card .card-body .description {
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    .popular-destination .card .destination-photo {
+        height: 140px;
+    }
+    .popular-destination .card .card-body {
+        padding-bottom: 22px;
+    }
+    .popular-destination .card .card-body .destination-title {
+        font-size: 16px;
+    }
+    .popular-destination .card .card-body h6 {
+        font-size: 13px;
+    }
+    .popular-destination .card .card-body .fee {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    .popular-destination .card .card-body .description {
+        display: none;
+    }
+}

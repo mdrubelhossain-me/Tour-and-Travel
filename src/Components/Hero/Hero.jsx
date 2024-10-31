@@ -73,8 +73,8 @@ const Hero = () => {
                                         </div> */}
                                     </div>
                                 </div>
-                                <div className="col-lg-12 col-md-12 d-flex justify-content-end m-auto">
-                                    <button type='submit' className='myBtn'>More Filters</button>
+                                <div className="col-lg-12 col-md-12 d-flex justify-content-end m-auto btn-area">
+                                    <button type='submit' className='myBtn'><i class="bi bi-funnel-fill"></i> More Filters</button>
                                 </div>
                             </div>
                         </form>

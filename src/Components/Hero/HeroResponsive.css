@@ -1,11 +1,30 @@
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .hero-section {
         height: 100vh;
     }
+    .myBtn{
+        margin: 0!important;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 75vh;
+    }
     .hero-section .content {
-        margin-top: 100px;
+        margin-top: 110px;
     }
     .search-area {
         margin-top: 20px;
+    }
+    .btn-area{
+        display: flex;
+        justify-content: center!important;
+    }
+    .myBtn{
+        margin: 0!important;
+        width: 100%;
     }
 }
