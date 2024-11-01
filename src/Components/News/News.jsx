@@ -12,7 +12,7 @@ const News = () => {
             <div className="row g-4">
               {newsData.map((news) => (
                 <div className="col-lg-6 col-md-6 col-sm-12" key={news.id}>
-                  <div className="card">
+                  <div className="card" data-aos="flip-left">
                     <div className="news-photo">
                       <img src={news.imgSrc} alt={news.nTitle} />
                     </div>
@@ -42,7 +42,7 @@ const News = () => {
             <div className="line"></div>
             <div className="row">
               {hotNews.map((hnews) => (
-                <div className="col-12" key={hnews.id}>
+                <div className="col-12" key={hnews.id} data-aos="fade-left">
                   <div className="hot-news">
                     <div className="hnews-photo">
                       <img src={hnews.imgSrc} alt={hnews.title} />

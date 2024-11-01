@@ -45,7 +45,7 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Shop
+                  Testimonial
                 </a>
               </li>
               <li className="nav-item">
@@ -64,7 +64,7 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <button type="button" className="myBtn">
+            <button type="button" className="myBtn" data-bs-toggle="modal" data-bs-target="#bookingModal">
               Book Now
             </button>
           </div>

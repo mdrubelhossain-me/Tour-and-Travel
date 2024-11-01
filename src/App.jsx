@@ -8,6 +8,7 @@ import Testimonial from "./Components/Testimonial/Testimonial";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import News from "./Components/News/News";
+import Modal from "./Components/Modal/Modal";
 
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
         subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       ></Title>
       <Testimonial/>
+      <Modal/>
       <Footer />
     </div>
   );
