@@ -1,0 +1,38 @@
+@media (max-width: 768px) {
+    .testimonial-section .card {
+        padding: 20px 20px;
+    }
+
+    .testimonial-section .testimonial-photo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .testimonial-section .card .name {
+        font-size: 16px;
+    }
+
+    .testimonial-section .card .designation {
+        font-size: 13px;
+    }
+
+    .testimonial-section .card i {
+        font-size: 25px;
+    }
+
+    .testimonial-section .card .card-body p {
+        font-size: 14px;
+    }
+
+    .slick-slide>div {
+        margin-left: 40px;
+    }
+
+    .slick-prev::before {
+        margin-left: 45px;
+    }
+
+    .slick-next::before {
+        margin-left: -30px;
+    }
+}

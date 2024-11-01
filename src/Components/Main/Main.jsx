@@ -5,7 +5,7 @@ import destinations from "../Data/DestinationData";
 
 const Main = () => {
   return (
-    <div className="container">
+    <div className="container pb-5">
       <div className="popular-destination">
         <div className="row g-4 mt-3">
           {destinations.map((destination) => (

@@ -1,0 +1,110 @@
+.news-section .card {
+    font-family: "Josefin Sans", sans-serif;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    overflow: hidden;
+}
+
+.news-section .card:hover img {
+    transform: scale(1.2) rotate(5deg);
+    transition: .6s;
+}
+
+.news-section .card .news-photo {
+    width: 100%;
+    height: 200px;
+    border: none;
+    overflow: hidden;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.news-section .card .news-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.news-section .card .card-body {
+    padding-bottom: 28px;
+}
+
+.news-section .card .card-body .news-title {
+    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 6px;
+    text-align: left;
+}
+
+.news-section .card .card-body .news-title:hover {
+    text-decoration: underline;
+    transition: .6s;
+}
+
+.rname-date {
+    display: flex;
+    column-gap: 25px;
+}
+
+.rname-date span {
+    color: black;
+    font-size: 12px;
+    opacity: .8;
+}
+
+.news-section .card .card-body .description {
+    font-size: 14px;
+    text-align: justify;
+    padding: 14px 0px 0px 0px;
+}
+
+.hot-news {
+    display: flex;
+    column-gap: 14px;
+}
+
+.hnews-photo {
+    width: 280px;
+    height: 60px;
+    border: none;
+    overflow: hidden;
+    border: none;
+}
+
+.hnews-photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.hot-news a {
+    font-size: 15px;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: -3px;
+}
+
+.hot-news span {
+    font-size: 12px;
+    font-family: "Josefin Sans", sans-serif;
+    color: black;
+    opacity: .6;
+    margin-top: 8px;
+    margin-bottom: 28px;
+}
+
+.hn-title{
+    font-size: 20px; 
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.bi-fire{
+    color: red;
+}
+.line{
+    width: 50px;
+    height: 3px;
+    background-color: red;
+    margin-bottom: 24px;
+}

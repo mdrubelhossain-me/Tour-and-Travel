@@ -1,13 +1,10 @@
 import React from "react";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import d1 from "../../assets/images/maldives.jpg";
-import d2 from "../../assets/images/dubai.jpg";
-import d3 from "../../assets/images/canada.jpg";
-import d4 from "../../assets/images/australia.jpg";
-import d5 from "../../assets/images/singapore.jpg";
-import d6 from "../../assets/images/thailand.jpg";
-import d7 from "../../assets/images/dubai2.jpg";
-import d8 from "../../assets/images/usa.jpg";
+import d1 from "../../assets/images/man1.jpg";
+import d2 from "../../assets/images/women1.jpg";
+import d3 from "../../assets/images/man2.jpg";
+import d4 from "../../assets/images/women2.jpg";
+
 
 const testimonials = [
   {

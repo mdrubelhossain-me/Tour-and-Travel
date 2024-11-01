@@ -7,6 +7,7 @@ import Title from "./Components/Title/Title";
 import Testimonial from "./Components/Testimonial/Testimonial";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import News from "./Components/News/News";
 
 
 const App = () => {
@@ -24,6 +25,11 @@ const App = () => {
         subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
       ></Title>
       <Main />
+      <Title
+        Title="Latest Travel News"
+        subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+      ></Title>
+      <News/>
       <Title
         Title="Testimonial"
         subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
