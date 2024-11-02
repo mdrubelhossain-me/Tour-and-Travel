@@ -106,7 +106,8 @@ const Footer = () => {
               <div className="ex-footer text-center">
                 <p>
                   {" "}
-                  &copy; 2024 <a href="#">Tour&Travel</a> | All Rights Reserved
+                  &copy; 2024 <a href="#">Tour&Travel</a> | All Rights Reserved 
+                  <span className="d-block" style={{fontSize: '12px'}}><i class="bi bi-pen"></i> Rubel</span>
                 </p>
               </div>
             </div>

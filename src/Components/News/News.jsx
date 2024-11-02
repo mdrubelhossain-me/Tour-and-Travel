@@ -3,9 +3,11 @@ import "./News.css";
 import "./NewsResponsive.css";
 import { newsData, hotNews } from "../Data/NewsData";
 
+
 const News = () => {
   return (
-    <div className="container pb-5 mb-4">
+   <div>
+     <div className="container pb-5 mb-4">
       <div className="news-section">
         <div className="row g-4 mt-4">
           <div className="col-lg-8 col-md-8 col-sm-6 col-6">
@@ -63,6 +65,7 @@ const News = () => {
         </div>
       </div>
     </div>
+   </div>
   );
 };
 

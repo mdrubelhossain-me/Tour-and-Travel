@@ -11,7 +11,7 @@ import News from "./Components/News/News";
 import About from './Components/About/About';
 import Packages from './Components/Packages/Packages';
 import Footer from "./Components/Footer/Footer";
-import Breadcrumb from "./Components/Breadcrumb/Breadcrumb";
+
 
 
 const App = () => {
@@ -23,7 +23,6 @@ const App = () => {
     <Router>
       <div>
         <Navbar />
-       <Breadcrumb/>
         </div>
         <Routes>
           <Route path="/" element={<Home />} />
