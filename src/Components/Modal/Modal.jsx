@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Modal.css";
+import { useForm } from "react-hook-form";
 
 const Modal = () => {
   const [countries, setCountries] = useState([]);
@@ -10,6 +11,16 @@ const Modal = () => {
       .then((data) => setCountries(data))
       .catch((error) => console.error("Error fetching countries:", error));
   }, []);
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+  };
 
   return (
     <div>
@@ -31,43 +42,72 @@ const Modal = () => {
               ></button>
             </div>
             <div className="mb-5">
-            <a className="logo" href="#">
+              <a className="logo" href="#">
                 Tour&Travel
-                <i class="bi bi-airplane"></i>
+                <i className="bi bi-airplane"></i>
               </a>
             </div>
             <div className="modal-body">
-              <form>
+              <form onSubmit={handleSubmit(onSubmit)}>
                 <div className="row g-3">
                   <div className="col-lg-6 col-md-6 col-sm-12">
                     <label className="form-label">From</label>
                     <input
+                      {...register("from", {
+                        required: "This field is required",
+                        minLength: { value: 3, message: "Minimum 3 characters" },
+                      })}
                       type="text"
-                      className="form-control"
+                      className={`form-control ${errors.from ? "is-invalid" : ""}`}
                       placeholder="From"
                     />
+                    {errors.from && <div className="invalid-feedback">{errors.from.message}</div>}
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12">
                     <label className="form-label">To</label>
                     <input
+                      {...register("to", { required: "This field is required" })}
                       type="text"
-                      className="form-control"
+                      className={`form-control ${errors.to ? "is-invalid" : ""}`}
                       placeholder="To"
                     />
+                    {errors.to && <div className="invalid-feedback">{errors.to.message}</div>}
                   </div>
                   <div className="col-lg-4 col-md-6 col-sm-12">
                     <label className="form-label">Travel Date</label>
-                    <input type="date" className="form-control" />
+                    <input
+                      {...register("travelDate", { required: "This field is required" })}
+                      type="date"
+                      className={`form-control ${errors.travelDate ? "is-invalid" : ""}`}
+                    />
+                    {errors.travelDate && <div className="invalid-feedback">{errors.travelDate.message}</div>}
                   </div>
                   <div className="col-lg-4 col-md-6 col-sm-12">
                     <label className="form-label">Adults</label>
                     <select
-                      className="form-select"
-                      aria-label="Default select example"
+                      {...register("adults", { required: "This field is required" })}
+                      className={`form-select ${errors.adults ? "is-invalid" : ""}`}
                     >
-                      <option value="" disabled selected>
-                        Open this select menu
+                      <option value="" disabled>
+                        Select number of adults
                       </option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                    </select>
+                    {errors.adults && <div className="invalid-feedback">{errors.adults.message}</div>}
+                  </div>
+                  <div className="col-lg-4 col-md-6 col-sm-12">
+                    <label className="form-label">Children</label>
+                    <select
+                      {...register("children")}
+                      className="form-select"
+                    >
+                      <option value="" disabled>
+                        Select number of children
+                      </option>
+                      <option value="0">0</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -75,60 +115,72 @@ const Modal = () => {
                     </select>
                   </div>
                   <div className="col-lg-4 col-md-6 col-sm-12">
-                    <label className="form-label">Childs</label>
-                    <select
-                      className="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option value="" disabled selected>
-                        Open this select menu
-                      </option>
-                      <option value="1">1 Child</option>
-                      <option value="2">2 Child</option>
-                      <option value="3">3 Child</option>
-                      <option value="4">4 Child</option>
-                    </select>
-                  </div>
-                  <div className="col-lg-4 col-md-6 col-sm-12">
                     <label className="form-label">First Name</label>
                     <input
+                      {...register("firstName", {
+                        required: "This field is required",
+                      })}
                       type="text"
-                      className="form-control"
+                      className={`form-control ${errors.firstName ? "is-invalid" : ""}`}
                       placeholder="First Name"
                     />
+                    {errors.firstName && <div className="invalid-feedback">{errors.firstName.message}</div>}
                   </div>
                   <div className="col-lg-4 col-md-6 col-sm-12">
                     <label className="form-label">Last Name</label>
                     <input
+                      {...register("lastName", {
+                        required: "This field is required",
+                      })}
                       type="text"
-                      className="form-control"
+                      className={`form-control ${errors.lastName ? "is-invalid" : ""}`}
                       placeholder="Last Name"
                     />
+                    {errors.lastName && <div className="invalid-feedback">{errors.lastName.message}</div>}
                   </div>
                   <div className="col-lg-4 col-md-6 col-sm-12">
                     <label className="form-label">Date of Birth</label>
-                    <input type="date" className="form-control" />
+                    <input
+                      {...register("dob", { required: "This field is required" })}
+                      type="date"
+                      className={`form-control ${errors.dob ? "is-invalid" : ""}`}
+                    />
+                    {errors.dob && <div className="invalid-feedback">{errors.dob.message}</div>}
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12">
-                    <label className="form-label">Enter Your Email</label>
+                    <label className="form-label">Email</label>
                     <input
+                      {...register("email", {
+                        required: "This field is required",
+                        pattern: {
+                          value: /^\S+@\S+$/i,
+                          message: "Invalid email address",
+                        },
+                      })}
                       type="email"
-                      className="form-control"
+                      className={`form-control ${errors.email ? "is-invalid" : ""}`}
                       placeholder="Enter Your Email"
                     />
+                    {errors.email && <div className="invalid-feedback">{errors.email.message}</div>}
                   </div>
                   <div className="col-lg-6 col-md-6 col-sm-12">
-                    <label className="form-label">Enter Your Phone</label>
+                    <label className="form-label">Phone</label>
                     <input
+                      {...register("phone", {
+                        required: "This field is required",
+                        minLength: { value: 10, message: "Minimum 10 characters" },
+                      })}
                       type="text"
-                      className="form-control"
+                      className={`form-control ${errors.phone ? "is-invalid" : ""}`}
                       placeholder="Enter Your Phone"
                     />
+                    {errors.phone && <div className="invalid-feedback">{errors.phone.message}</div>}
                   </div>
                   <div className="col-lg-4 col-md-6 col-sm-12">
                     <label className="form-label">Country</label>
-                    <select id="country-select" className="form-select">
-                      <option value="" disabled selected>
+                    <select {...register("country", { required: "This field is required" })} 
+                    className={`form-select ${errors.country ? "is-invalid" : ""}`}>
+                      <option value="" disabled>
                         Choose a country
                       </option>
                       {countries.map((country) => (
@@ -137,26 +189,31 @@ const Modal = () => {
                         </option>
                       ))}
                     </select>
+                    {errors.country && <div className="invalid-feedback">{errors.country.message}</div>}
                   </div>
                   <div className="col-lg-4 col-md-6 col-sm-12">
                     <label className="form-label">Address</label>
                     <input
+                      {...register("address", { required: "This field is required" })}
                       type="text"
-                      className="form-control"
+                      className={`form-control ${errors.address ? "is-invalid" : ""}`}
                       placeholder="Enter Your Address"
                     />
+                    {errors.address && <div className="invalid-feedback">{errors.address.message}</div>}
                   </div>
                   <div className="col-lg-4 col-md-6 col-sm-12">
                     <label className="form-label">Zipcode</label>
                     <input
+                      {...register("zipcode", { required: "This field is required" })}
                       type="text"
-                      className="form-control"
+                      className={`form-control ${errors.zipcode ? "is-invalid" : ""}`}
                       placeholder="Enter Your Zipcode"
                     />
+                    {errors.zipcode && <div className="invalid-feedback">{errors.zipcode.message}</div>}
                   </div>
 
                   <div className="d-flex justify-content-end mt-4">
-                    <button type="button" className="myBtn">
+                    <button type="submit" className="myBtn">
                       Book Now
                     </button>
                   </div>
