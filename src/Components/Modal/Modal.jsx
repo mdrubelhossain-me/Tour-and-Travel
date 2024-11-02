@@ -119,6 +119,7 @@ const Modal = () => {
                     <input
                       {...register("firstName", {
                         required: "This field is required",
+                        minLength: { value: 3, message: "Minimum 3 characters" },
                       })}
                       type="text"
                       className={`form-control ${errors.firstName ? "is-invalid" : ""}`}
@@ -153,7 +154,7 @@ const Modal = () => {
                       {...register("email", {
                         required: "This field is required",
                         pattern: {
-                          value: /^\S+@\S+$/i,
+                          value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
                           message: "Invalid email address",
                         },
                       })}

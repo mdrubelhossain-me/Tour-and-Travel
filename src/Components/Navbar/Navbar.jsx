@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import "./NavbarResponsive.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,10 +14,10 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <a className="navbar-brand" href="#">
-            Tour&Travel
-            <i class="bi bi-airplane"></i>
-          </a>
+          <Link className="navbar-brand"  to="/">
+          Tour&Travel
+                  <i class="bi bi-airplane"></i>
+                </Link>
           <div
             className={`menu-toggle ${isOpen ? "active" : ""}`}
             type="button"
@@ -34,37 +35,42 @@ const Navbar = () => {
           >
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/news">
                   News
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/testimonial">
                   Testimonial
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/packages">
                   Packages
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/about">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <Link className="nav-link" to="/contact">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
-            <button type="button" className="myBtn" data-bs-toggle="modal" data-bs-target="#bookingModal">
+            <button
+              type="button"
+              className="myBtn"
+              data-bs-toggle="modal"
+              data-bs-target="#bookingModal"
+            >
               Book Now
             </button>
           </div>

@@ -1,44 +1,42 @@
 import React, { useEffect } from "react";
 import Navbar from "./Components/Navbar/Navbar";
-import Main from "./Components/Main/Main";
-import Footer from "./Components/Footer/Footer";
-import Hero from "./Components/Hero/Hero";
-import Title from "./Components/Title/Title";
-import Testimonial from "./Components/Testimonial/Testimonial";
-import Aos from 'aos';
-import 'aos/dist/aos.css';
-import News from "./Components/News/News";
 import Modal from "./Components/Modal/Modal";
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./Components/Home/Home";
+import Contact from "./Components/Contact/Contact";
+import Testimonial from "./Components/Testimonial/Testimonial";
+import News from "./Components/News/News";
+import About from './Components/About/About';
+import Packages from './Components/Packages/Packages';
+import Footer from "./Components/Footer/Footer";
+import Breadcrumb from "./Components/Breadcrumb/Breadcrumb";
 
 
 const App = () => {
-
-  useEffect(()=>{
-    Aos.init({duration: 2000})
-  }, [])
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
 
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Title
-        Title="Popular Destination Visit"
-        subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-      ></Title>
-      <Main />
-      <Title
-        Title="Latest Travel News"
-        subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-      ></Title>
-      <News/>
-      <Title
-        Title="Testimonial"
-        subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-      ></Title>
-      <Testimonial/>
-      <Modal/>
-      <Footer />
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+       <Breadcrumb/>
+        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/testimonial" element={<Testimonial />} />
+          <Route path="/packages" element={<Packages />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Modal />
+        <Footer />
+   
+    </Router>
   );
 };
 

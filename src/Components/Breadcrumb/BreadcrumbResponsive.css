@@ -1,0 +1,17 @@
+@media (max-width: 991px) {
+    .bredcumb-section {
+        height: 240px;
+    }
+    .bredcumb-section .bredcumb-text h3 {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bredcumb-section {
+        height: 240px;
+    }
+    .bredcumb-section .bredcumb-text h3 {
+        font-size: 25px;
+    }
+}
