@@ -1,0 +1,29 @@
+@media (max-width: 991px) {
+    .l-side h2{
+        font-size: 30px;
+        text-align: center;
+        -webkit-text-stroke: 1px;
+    }
+    .l-side p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .map{
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .l-side h2{
+        font-size: 30px;
+        text-align: center;
+        -webkit-text-stroke: 1px;
+    }
+    .l-side p{
+        text-align: center;
+        font-size: 16px;
+    }
+    .map{
+        height: 250px;
+    }
+}

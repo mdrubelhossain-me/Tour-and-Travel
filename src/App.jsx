@@ -11,6 +11,7 @@ import News from "./Components/News/News";
 import About from './Components/About/About';
 import Packages from './Components/Packages/Packages';
 import Footer from "./Components/Footer/Footer";
+import NotFound from './Components/NotFound/NotFound';
 
 
 
@@ -31,6 +32,7 @@ const App = () => {
           <Route path="/packages" element={<Packages />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound/>} />
         </Routes>
         <Modal />
         <Footer />
