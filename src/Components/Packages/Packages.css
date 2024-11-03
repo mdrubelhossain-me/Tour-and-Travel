@@ -1,0 +1,87 @@
+
+.package-section{
+    font-family: "Josefin Sans", sans-serif;
+
+}
+.package-section .card{
+    overflow: hidden;
+    border: 1px solid white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.package-section .card:hover{
+    border-color: rgb(93, 93, 209);
+    transition: .6s;
+}
+
+.package-section .card .p-photo{
+    width: 100%;
+    height: 160px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    position: relative;
+}
+.over-lay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .8;
+    z-index: 1;
+} 
+.package-section .card .p-photo .p-title{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.package-section .card .p-photo .p-title h2{
+    margin: 0;
+    padding: 0;
+}
+.package-section .card .p-photo .p-title h2 b{
+    font-size: 45px;
+}
+.package-section .card .p-photo .p-title h3{
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.package-section .card .p-photo img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.package-section .card  .card-body{
+    padding: 20px 40px;
+}
+.package-section .card .card-body ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+.package-section .card .card-body ul li{
+    font-size: 16px;
+    line-height: 28px;
+    opacity: .9;
+}
+.package-section .card .card-body ul li i{
+    padding-right: 10px;
+    color: rgb(93, 93, 209);
+    font-size: 15px;
+    opacity: .9;
+}
+.package-section .card .card-body  h3{
+    font-size: 22px;
+}

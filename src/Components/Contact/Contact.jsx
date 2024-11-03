@@ -20,8 +20,8 @@ const Contact = () => {
       <Breadcrumb title="Contact" bgImg={p1} />
       <div className="contact-section mt-5 pt-5">
         <div className="container">
-          <div className="row g-5 pb-5">
-            <div className="col-lg-6 col-md-12 col-sm-12 l-side">
+          <div className="row g-5 pb-5 overflow-hidden">
+            <div className="col-lg-6 col-md-12 col-sm-12 l-side" data-aos="fade-right">
               <h2>
                 <b style={{ color: "blue", opacity: ".8" }}>Connect</b> With Us
               </h2>
@@ -31,7 +31,7 @@ const Contact = () => {
                 autem incidunt vitae officiis! Hic, repellat maiores. Quia eos
                 beatae sunt tempore?
               </p>
-              <div className="row g-3 mt-5 justify-content-center">
+              <div className="row g-3 mt-3 justify-content-center">
                 <div className="col-lg-4 col-md-4 col-sm-6 col-6">
                   <div className="c-box">
                     <div className="icon">
@@ -66,7 +66,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-6 col-md-12 col-sm-12 r-side">
+            <div className="col-lg-6 col-md-12 col-sm-12 r-side" data-aos="fade-left">
               <div className="form-section">
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="row g-3">
