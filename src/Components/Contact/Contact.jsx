@@ -21,7 +21,7 @@ const Contact = () => {
       <div className="contact-section mt-5 pt-5">
         <div className="container">
           <div className="row g-5 pb-5 overflow-hidden">
-            <div className="col-lg-6 col-md-12 col-sm-12 l-side" data-aos="fade-right">
+            <div className="col-lg-6 col-md-12 col-sm-12 l-side">
               <h2>
                 <b style={{ color: "blue", opacity: ".8" }}>Connect</b> With Us
               </h2>
