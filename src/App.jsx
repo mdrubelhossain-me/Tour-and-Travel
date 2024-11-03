@@ -12,6 +12,7 @@ import About from './Components/About/About';
 import Packages from './Components/Packages/Packages';
 import Footer from "./Components/Footer/Footer";
 import NotFound from './Components/NotFound/NotFound';
+import BackToTopButton from "./Components/BackToTopButton/BackToTopButton";
 
 
 
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="*" element={<NotFound/>} />
         </Routes>
         <Modal />
+        <BackToTopButton/>
         <Footer />
    
     </Router>
