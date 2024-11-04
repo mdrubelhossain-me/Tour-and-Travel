@@ -14,13 +14,6 @@
     object-fit: cover;
 }
 
-.bi-pen {
-    color: blue;
-}
-
-.bi-calendar-event {
-    color: blue;
-}
 
 @media (max-width: 991px) {
     .news-photo {

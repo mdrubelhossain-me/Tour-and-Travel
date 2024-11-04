@@ -78,7 +78,7 @@
     align-items: center;
     column-gap: 8px;
     border: 1px solid #dfdede;
-    background-color: #dfdede;
+    background-color: rgb(209, 227, 243);
     padding-right: 10px;
     border-radius: 6px;
 }
