@@ -4,6 +4,7 @@ import destinations from "../Data/DestinationData";
 import NotFound from '../NotFound/NotFound';
 import Breadcrumb from '../Breadcrumb/Breadcrumb';
 import p1 from '../../assets/images/dubai2.jpg';
+import './DestinationDetails.css';
 
 const DestinationDetails = () => {
     const { id } = useParams();
@@ -16,7 +17,7 @@ const DestinationDetails = () => {
     return (
         <div>
             <Breadcrumb title="Destination Details" bgImg={p1}/>
-            <div className="container mt-5">
+            <div className="container mt-5 mb-5 pt-5 pb-3">
         <div className="card">
           <div className="destination-photo">
             <img src={destination.imgSrc} className='img-fluid' alt={destination.d_title} />
