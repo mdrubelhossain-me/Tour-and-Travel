@@ -18,7 +18,7 @@ import BackToTopButton from "./Components/BackToTopButton/BackToTopButton";
 
 const App = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 2000, disable: window.innerWidth <= 768 });
   }, []);
 
   return (
@@ -36,8 +36,8 @@ const App = () => {
           <Route path="*" element={<NotFound/>} />
         </Routes>
         <Modal />
-        <BackToTopButton/>
         <Footer />
+        <BackToTopButton/>
    
     </Router>
   );

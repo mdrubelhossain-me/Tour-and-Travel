@@ -31,7 +31,7 @@ const Contact = () => {
                 autem incidunt vitae officiis! Hic, repellat maiores. Quia eos
                 beatae sunt tempore?
               </p>
-              <div className="row g-3 mt-3 justify-content-center">
+              <div className="row g-3 mt-3 justify-content-center" data-aos="fade-up">
                 <div className="col-lg-4 col-md-4 col-sm-6 col-6">
                   <div className="c-box">
                     <div className="icon">

@@ -1,6 +1,7 @@
 @media (max-width: 991px) {
     .footer-section {
         height: 750px;
+        overflow-x: hidden;
     }
 }
 

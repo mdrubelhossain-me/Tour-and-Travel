@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './BackToTopButton.css';
 
 const BackToTopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -48,8 +49,7 @@ const styles = {
         padding: '10px 15px',
         cursor: 'pointer',
         zIndex: 1000,
-        maxWidth: '100%', 
-        overflow: 'hidden',
+        overflow: 'hidden'
     },
 };
 

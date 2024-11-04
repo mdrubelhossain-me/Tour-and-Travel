@@ -2,6 +2,7 @@ import React from "react";
 import "./Main.css";
 import "./MainResponsive.css";
 import destinations from "../Data/DestinationData";
+import LazyLoad from "react-lazyload";
 
 const Main = () => {
   return (
@@ -15,7 +16,10 @@ const Main = () => {
             >
               <div className="card">
                 <div className="destination-photo">
+                <img src={destination.imgSrc} alt={destination.d_title} />
+                  {/* <LazyLoad offset={50} placeholder={<div>Loading...</div>}>
                   <img src={destination.imgSrc} alt={destination.d_title} />
+                  </LazyLoad> */}
                 </div>
                 <div className="card-body">
                   <a href="#" className="destination-title d-block p-0">
