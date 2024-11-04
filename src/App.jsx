@@ -15,6 +15,7 @@ import NotFound from './Components/NotFound/NotFound';
 import BackToTopButton from "./Components/BackToTopButton/BackToTopButton";
 import DestinationDetails from "./Components/DestinationDetails/DestinationDetails";
 import NewsDetails from "./Components/NewsDetails/NewsDetails";
+import HotNewsDetails from "./Components/HotNewsDetails/HotNewsDetails";
 
 
 
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/details/:id" element={<DestinationDetails />} />
           <Route path="/news/details/:id" element={<NewsDetails />} />
+          <Route path="/hot-news/details/:id" element={<HotNewsDetails />} />
           <Route path="/news" element={<News />} />
           <Route path="/testimonial" element={<Testimonial />} />
           <Route path="/packages" element={<Packages />} />

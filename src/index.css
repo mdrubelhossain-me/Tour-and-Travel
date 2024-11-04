@@ -44,3 +44,9 @@ body {
     transition: .6s;
 }
 
+@media (max-width: 768px){
+    html{
+        overflow-x: hidden;
+    }
+}
+

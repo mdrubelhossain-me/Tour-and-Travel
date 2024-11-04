@@ -1,0 +1,16 @@
+
+.hnews-photos{
+    width: 400px;
+    height: 150px;
+}
+.hnews-photos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px){
+    .hnews-photos{
+        width: 100%;
+    }
+}

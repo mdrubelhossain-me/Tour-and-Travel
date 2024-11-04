@@ -64,9 +64,12 @@ const News = () => {
                         <img src={hnews.imgSrc} alt={hnews.title} />
                       </div>
                       <div>
-                        <a href="#" className="d-block">
+                      <Link
+                          to={`/hot-news/details/${hnews.id}`}
+                          className="d-block"
+                        >
                           {hnews.title}
-                        </a>
+                        </Link>
                         <span className="d-block">
                           <i class="bi bi-calendar-event"></i> {hnews.date}
                         </span>
