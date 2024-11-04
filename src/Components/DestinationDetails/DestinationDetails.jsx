@@ -22,7 +22,7 @@ const DestinationDetails = () => {
           <div className="destination-photo">
             <img src={destination.imgSrc} className='img-fluid' alt={destination.d_title} />
           </div>
-          <div className="card-body">
+          <div className="card-body px-0">
             <h2>{destination.d_title}</h2>
             <h6><i className={`bi ${destination.icon}`}></i> {destination.location}</h6>
             <p className="fee">${destination.Fees}</p>
