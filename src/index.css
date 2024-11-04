@@ -43,9 +43,18 @@ body {
     background: linear-gradient(90deg, rgba(26, 26, 144, 1) 0%, rgba(57, 219, 212, 1) 91%);
     transition: .6s;
 }
+<<<<<<< HEAD
 
  /* @media (max-width: 768px) {
     html {
         overflow-x: hidden;
     }
 }  */
+=======
+@media (max-width: 768px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+}
+>>>>>>> origin/master
