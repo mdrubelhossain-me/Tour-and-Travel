@@ -13,6 +13,7 @@ import Packages from './Components/Packages/Packages';
 import Footer from "./Components/Footer/Footer";
 import NotFound from './Components/NotFound/NotFound';
 import BackToTopButton from "./Components/BackToTopButton/BackToTopButton";
+import DestinationDetails from "./Components/DestinationDetails/DestinationDetails";
 
 
 
@@ -28,6 +29,7 @@ const App = () => {
         </div>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/details/:id" element={<DestinationDetails />} />
           <Route path="/news" element={<News />} />
           <Route path="/testimonial" element={<Testimonial />} />
           <Route path="/packages" element={<Packages />} />
