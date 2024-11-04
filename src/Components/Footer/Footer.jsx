@@ -44,7 +44,7 @@ const Footer = () => {
               <h4>Contact</h4>
               <ul>
                 <li>
-                  <i class="bi bi-geo-alt"></i>
+                  <i class="bi bi-geo-alt" className="text-white"></i>
                   1st Building, Road#Demo, Dhaka, Bangladesh.
                 </li>
                 <li>
