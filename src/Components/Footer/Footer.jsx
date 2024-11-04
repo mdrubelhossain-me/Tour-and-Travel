@@ -44,15 +44,15 @@ const Footer = () => {
               <h4>Contact</h4>
               <ul>
                 <li>
-                  <i class="bi bi-geo-alt" className="text-white"></i>
+                  <i className="bi bi-geo-alt"></i>
                   1st Building, Road#Demo, Dhaka, Bangladesh.
                 </li>
                 <li>
-                  <i class="bi bi-telephone"></i>
+                  <i className="bi bi-telephone"></i>
                   +880 123456
                 </li>
                 <li>
-                  <i class="bi bi-envelope"></i>
+                  <i className="bi bi-envelope"></i>
                   example@gmail.com
                 </li>
               </ul>
@@ -61,23 +61,23 @@ const Footer = () => {
               <h4>Important Links</h4>
               <ul>
                 <li>
-                  <i class="bi bi-chevron-right"></i>
+                  <i className="bi bi-chevron-right"></i>
                   <a href="#">Services</a>
                 </li>
                 <li>
-                  <i class="bi bi-chevron-right"></i>
+                  <i className="bi bi-chevron-right"></i>
                   <a href="#">Insurance</a>
                 </li>
                 <li>
-                  <i class="bi bi-chevron-right"></i>
+                  <i className="bi bi-chevron-right"></i>
                   <a href="#">Trouism</a>
                 </li>
                 <li>
-                  <i class="bi bi-chevron-right"></i>
+                  <i className="bi bi-chevron-right"></i>
                   <a href="#">Agency</a>
                 </li>
                 <li>
-                  <i class="bi bi-chevron-right"></i>
+                  <i className="bi bi-chevron-right"></i>
                   <a href="#">Payment</a>
                 </li>
               </ul>

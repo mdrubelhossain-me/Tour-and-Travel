@@ -84,6 +84,7 @@
 }
 
 .footer-section .content .f-widget ul li i {
+    color: white!important;
     padding-right: 8px;
     font-size: 13px;
 }
